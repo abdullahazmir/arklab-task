@@ -152,8 +152,8 @@ This prototype was developed with the assistance of Google Antigravity AI agenti
 
 ## 📬 Deliverables & Participation Contact
 
+- **GitHub Repository:** https://github.com/abdullahazmir/arklab-task
 - **Live Vercel Web Deployment:** https://arklab-omega.vercel.app
-- **Repository Directory:** `e:/Projects/arklab`
 - **Submission Recipient:** `ahmedsakeeb.work@gmail.com`
 - **CC:** `hrd@arklabai.com`
 - **Subject Line:** `React Native Developer Intern Batch 04 - {Your Name} - Arklab AI`
