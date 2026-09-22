@@ -127,6 +127,30 @@ e:/Projects/arklab/
 
 ---
 
+## 📦 Building an Installable Android APK
+
+The project has been fully prebuilt and configured for generating native Android `.apk` files:
+
+### Option 1: Expo Cloud Build (Recommended — No local Android tools needed)
+Run the following command to generate a download link and installable APK via Expo EAS:
+```bash
+npx eas build -p android --profile preview
+```
+
+### Option 2: Local Gradle Build (Requires JDK 17+ and Android SDK)
+The native `./android` project folder has been generated using `npx expo prebuild`. To compile the release `.apk` locally:
+```powershell
+cd android
+.\gradlew assembleRelease
+```
+The output `.apk` file will be located at:
+`android/app/build/outputs/apk/release/app-release.apk`
+
+### Option 3: GitHub Actions Automated CI/CD
+A GitHub Actions workflow is included in `.github/workflows/build-apk.yml`. Pushing to `main` will automatically build the APK on GitHub servers and attach it as a downloadable artifact.
+
+---
+
 ## 🎨 Mobile Design Decisions & Accessibility
 
 - **Dark Mode Shell:** Deep dark navy aesthetic (`#0B1220`) reduces eye fatigue while giving metrics high visual prominence.
